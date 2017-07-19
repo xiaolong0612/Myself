@@ -4,7 +4,9 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {
+      nickName: '赵小龙'
+    }
   },
   //事件处理函数
   bindViewTap: function() {
@@ -19,7 +21,7 @@ Page({
     app.getUserInfo(function(userInfo){
       //更新数据
       that.setData({
-        userInfo:userInfo
+        // userInfo:userInfo
       })
     })
   }

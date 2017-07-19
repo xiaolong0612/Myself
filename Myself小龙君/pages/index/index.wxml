@@ -1,10 +1,36 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <view class="head">
+    <view class="bg-avatar"></view>
+    <view class="head-userinfo">
+      <image class="userinfo-avatar" src="../../image/myself.jpg" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="user-general">
+    <image src="../../image/icon-book.png"></image><text>大专</text>
+    <image src="../../image/icon-jingyan.png"></image><text>2年工作经验</text>
+    <image src="../../image/icon-address.png"></image><text>现居厦门</text>
+    <view></view>
+    <image src="../../image/icon-phone.png"></image><text>18636787915</text>
+    <image src="../../image/icon-email.png"></image><text>1057520381@qq.com</text>
+  </view>
+  <view class="weui-navbar" style="position:relative;">
+    <view class="weui-navbar__item weui-bar__item_on">
+        <text>选项一</text>
+    </view>
+    <view class="weui-navbar__item">
+        选项二
+    </view>
+    <view class="weui-navbar__item">
+        选项三
+    </view>
+            </view>
+  <!-- <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="../../image/myself.jpg" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
 </view>

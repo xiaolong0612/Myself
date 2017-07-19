@@ -1,21 +1,59 @@
+@import "../common/lib/weui.wxss";
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.head{
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
-
-.userinfo-avatar {
+.head .bg-avatar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 160px;
+  background: url(http://img4.imgtn.bdimg.com/it/u=844837588,1717528368&fm=26&gp=0.jpg) center no-repeat;
+  background-size: cover;
+  filter: blur(15px);
+  background-color: rgba(141, 141, 141, 0.35);
+  background-blend-mode: darken; 
+}
+.head .userinfo-avatar{
+  position: relative;
+  z-index: 2;
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
+  margin: 30px 20px 10px;
   border-radius: 50%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.head-userinfo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
-
-.usermotto {
-  margin-top: 200px;
+.userinfo-nickname {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.ui-icon{
+  background-image: url('https://www.lgstatic.com/www/static/mycenter/modules/common/img/icons_mr_0ef4596.png');
+  background-repeat: no-repeat;
+}
+.user-general{
+  text-align: center;
+  padding: 10px 0;
+}
+.user-general image{
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.user-general text{
+  font-size: 15px;
+  color: #666;
+  vertical-align: middle;
+  margin: 6px 20px 0 5px;
 }
